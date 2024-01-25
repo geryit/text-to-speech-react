@@ -2,7 +2,7 @@
 import React, { useCallback, useState } from "react";
 import useTextToSpeech from "../hooks/useTextToSpeech";
 
-function TextToSpeechApp() {
+function Ssml() {
   const [text, setText] = useState(`123 Street Ln, Small Town, IL 12345 USA
 1 Jenny St & Number St, Tutone City, CA 86753
 1 Piazza del Fibonacci, 12358 Pisa, Italy`);
@@ -28,4 +28,4 @@ function TextToSpeechApp() {
   );
 }
 
-export default TextToSpeechApp;
+export default Ssml;

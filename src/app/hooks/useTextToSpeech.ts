@@ -44,10 +44,10 @@ const useTextToSpeech = (inputText: string) => {
       );
   }, [inputText]);
 
-  const playPause = useCallback(() => {
+  const playPause = useCallback(async () => {
     if (audio) {
       if (!isPlaying) {
-        audio.play();
+        await audio.play();
       } else {
         audio.pause();
       }
